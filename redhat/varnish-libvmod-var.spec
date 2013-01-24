@@ -1,11 +1,11 @@
-%define build_revision %(R=$(python version); echo $R)
 %define varnish_src $HOME/varnish-3.0.3/
+%define vmod_release %(echo $RELEASE)
 %define vmod_dir /usr/lib64/varnish/vmods/
 
 Summary: varnish-libvmod-var
 Name: varnish-libvmod-var
 Version: 0.1
-Release: %{build_revision}
+Release: %{vmod_release}
 License: BSD
 Group: System Environment/Daemons
 Source0: ./libvmod-var.tar.gz
